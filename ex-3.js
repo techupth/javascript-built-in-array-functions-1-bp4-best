@@ -6,12 +6,13 @@ const todos = [
   { topic: "Clean the room", completed: true },
 ];
 
-function getTodoTopics(todos) {
+function getTodoTopics(todo) {
   // Start coding here
+  return todo.topic;
 }
 
-getTodoTopics(todos);
-
+let todoList = todos.map(getTodoTopics);
+console.log(todoList)
 /* 
 	Output:
 	[
